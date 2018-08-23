@@ -3,4 +3,10 @@
     <string name="usuario">Ingrese Usuario:</string>
     <string name="password">Ingrese Contraseña:</string>
     <string name="sesion">Iniciar Sesion</string>
+    <string name="nombre">Ingrese nombre:</string>
+    <string name="id">Ingrese Nit o C.C:</string>
+    <string name="telefono">Ingrese num telefono:</string>
+    <string name="email">Ingrese correo electronico:</string>
+    <string name="registro">REGISTRARSE</string>
+    <string name="bienvenido">BIENVENIDO</string>
 </resources>

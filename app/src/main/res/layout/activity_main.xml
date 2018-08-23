@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="12dp"
         android:src="@drawable/login" />
 
     <TextView
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="198dp"
+        android:layout_marginTop="163dp"
         android:gravity="center"
         android:text="@string/usuario"
         android:textSize="15dp"
@@ -34,9 +34,9 @@
         android:id="@+id/editUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="224dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="208dp"
         android:inputType="text"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="159dp" />
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="184dp"
+        android:layout_marginBottom="209dp"
         android:gravity="center"
         android:text="@string/password"
         android:textSize="15dp"
@@ -60,8 +60,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="123dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="156dp"
         android:inputType="text"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="319dp" />
@@ -72,12 +72,22 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="39dp"
+        android:layout_marginBottom="83dp"
         android:background="#f0a0a0"
         android:gravity="center"
         android:text="@string/sesion"
         android:textSize="25dp"
         tools:layout_editor_absoluteX="107dp"
         tools:layout_editor_absoluteY="408dp" />
+
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:clickable="true"
+        android:text="@string/registro" />
 
 </RelativeLayout>
