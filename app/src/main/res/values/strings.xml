@@ -8,5 +8,5 @@
     <string name="telefono">Ingrese num telefono:</string>
     <string name="email">Ingrese correo electronico:</string>
     <string name="registro">REGISTRARSE</string>
-    <string name="bienvenido">BIENVENIDO</string>
+    <string name="campo_obligatorio">Campo Obligatorio</string>
 </resources>
