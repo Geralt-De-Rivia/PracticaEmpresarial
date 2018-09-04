@@ -26,4 +26,10 @@ public class Principal extends AppCompatActivity{
         tvemail.setText(email);
         tvtelefono.setText(telefono);
     }
+    public void onBackPressed(){
+        Intent menu = new Intent(Principal.this, MainActivity.class);
+        startActivity(menu);
+
+        Principal.this.finish();
+    }
 }

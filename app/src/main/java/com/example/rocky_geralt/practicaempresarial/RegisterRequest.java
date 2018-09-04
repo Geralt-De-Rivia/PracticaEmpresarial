@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class RegisterRequest extends StringRequest {
 
-    private static final String REGISTER_REQUEST_URL = "http://192.168.88.125/proyectopractica/Register.php"; //Ruta donde se encuentra nuestra conexion php a base de datos de registro
+    private static final String REGISTER_REQUEST_URL = "https://half-pound-roar.000webhostapp.com/proyectopractica/Register.php"; //Ruta donde se encuentra nuestra conexion php a base de datos de registro
     private Map<String, String> parametros;
 
     public RegisterRequest(String id, String nombre, String email, String telefono, String password, Response.Listener<String> listener) {

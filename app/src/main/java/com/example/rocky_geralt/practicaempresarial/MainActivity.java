@@ -37,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Registro.class);
-                MainActivity.this.startActivity(intent);
+                startActivity(intent);
+                MainActivity.this.finish();
             }
         });
 
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (id.getText().toString().isEmpty()){  //AQUI DIGO SI EL CAMPO RUT ESTÁ VACÍO
 
-                    Toast.makeText(MainActivity.this, "Debe ingresar rut", Toast.LENGTH_SHORT).show(); //MANDE UN MENSAJE QUE DEBE INGRESAR RUT
+                    Toast.makeText(MainActivity.this, "Debe ingresar Nit o cedula", Toast.LENGTH_SHORT).show(); //MANDE UN MENSAJE QUE DEBE INGRESAR RUT
 
                 }else if (password.getText().toString().isEmpty()) {
                     //AQUI DIGO SI EL CAMPO PASSWORD ESTÁ VACÍO, TAMBIÉN MANDE UN MENSAJE DE QUE ESTÁ VACÍO
@@ -66,18 +67,20 @@ public class MainActivity extends AppCompatActivity {
                             if (success){
                                 String nombre = jsonResponse.getString("nombre");
                                 String email = jsonResponse.getString("email");
-                                String telefono = jsonResponse.getString("nombre");
+                                String telefono = jsonResponse.getString("telefono");
 
                                 Intent intent = new Intent(MainActivity.this, Principal.class);
                                 intent.putExtra("nombre", nombre);
                                 intent.putExtra("email", email);
                                 intent.putExtra("telefono", telefono);
 
-                                MainActivity.this.startActivity(intent);
+                                startActivity(intent);
+
+                                MainActivity.this.finish();
 
                             }else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                                builder.setMessage("error de Login").setNegativeButton("Volver",null).create().show();
+                                builder.setMessage("Error de logueo o Usuario no existe").setNegativeButton("Volver",null).create().show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -92,4 +95,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }

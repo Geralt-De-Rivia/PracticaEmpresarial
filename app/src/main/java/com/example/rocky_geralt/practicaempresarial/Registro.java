@@ -80,10 +80,11 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
                     if (success){
                         Toast.makeText(Registro.this, "Usuario registrado exitosamente", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(Registro.this, MainActivity.class);
-                        Registro.this.startActivity(intent);
+                        startActivity(intent);
+                        Registro.this.finish();
                     }else {
                         AlertDialog.Builder builder = new AlertDialog.Builder(Registro.this);
-                        builder.setMessage("El alumno ya está registrado").setNegativeButton("Volver",null).create().show();
+                        builder.setMessage("El usuario ya está registrado").setNegativeButton("Volver",null).create().show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -94,6 +95,13 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
         RegisterRequest registerRequest = new RegisterRequest(id, nombre, email, telefono, password, respoListener );
         RequestQueue queue = Volley.newRequestQueue(Registro.this);
         queue.add(registerRequest);
+    }
+
+    public void onBackPressed(){
+        Intent menu = new Intent(Registro.this, MainActivity.class);
+        startActivity(menu);
+
+        Registro.this.finish();
     }
 
 }
