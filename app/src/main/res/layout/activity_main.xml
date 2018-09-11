@@ -9,11 +9,23 @@
     android:padding="10dp"
     android:background="@drawable/fondo">
 
-    <ImageView
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:layout_gravity="left"
-        android:src="@drawable/circuito" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="left"
+            android:src="@drawable/circuito" />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="left"
+            android:src="@drawable/ned" />
+    </LinearLayout>
 
 
     <LinearLayout
@@ -68,23 +80,23 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="31dp"
         android:layout_gravity="right"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="40dp">
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="50dp">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/registro"/>
+            android:background="@drawable/registro" />
+
         <TextView
             android:id="@+id/txtRegistro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_gravity="right"
+            android:layout_gravity="right|center"
             android:text="@string/registro"
-            android:textColor="#fff"/>
+            android:textColor="#fff" />
     </LinearLayout>
 
 
@@ -97,6 +109,7 @@
         android:text="@string/sesion"
         android:textSize="25dp"
         android:gravity="center"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+        android:backgroundTint="#105510"/>
 
 </LinearLayout>
