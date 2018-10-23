@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PracticaEmpresarial</string>
+    <string name="app_name">PARNERT TRUST</string>
     <string name="usuario">Usuario:</string>
     <string name="password">Contraseña:</string>
     <string name="sesion">Iniciar Sesion</string>
@@ -9,4 +9,97 @@
     <string name="email">Correo electronico:</string>
     <string name="registro">REGISTRARSE</string>
     <string name="campo_obligatorio">Campo Obligatorio</string>
+    <string name="menu_player">Admin</string>
+    <string name="menu_howto">Ayuda</string>
+    <string name="menu_about">Acerca de</string>
+    <string name="historia1">Todo comenzó en marzo del día 31 de 1987, cuando nació Diego Alexander Castillo en la ciudad
+        de Guaduas Cundinamarca, actualmente fundador de la empresa NED, la cual ha demostrado un alto nivel de servicio
+        con calidad y profesionalismo en la ciudad de Yopal-Casanare.
+Desde muy pequeño su padre le infunde el amor hacia el trabajo y la electrónica, esto ayuda para que en su mente encuentre un
+        motor para conseguir dinero y tener una mejor calidad de vida. Con todo el conocimiento que su padre le estaba heredando
+        y con unos cuantos aparatos que el joven diego en ese entonces, los dañaba y luego los arreglaba, así transcurría su
+        vida con la misma temática, hasta que fue aprendiendo más y más, llegando al punto que decide salir de su casa a buscar
+        nuevas alternativas y oportunidades a tan temprana edad.
+Después de un cierto tiempo y etapas con dificultades, Diego Alexander Castillo relata que estuvo un cierto tiempo en las calles
+        de Bogotá, un lugar oscuro en esa época y todavía lo sigue siendo, una zona de drogadicción, muertes y personas, ya con la
+        vida arruinada y sin ninguno destino en donde direccionarse. Salió a una edad muy temprana de su casa en búsqueda de
+        oportunidades, pero la vida de las calles lo llevó por un mal camino de perdición, consumiendo diferentes tipos de droga
+        y vicios, terminando un tiempo cierto largo en el (barrio del cartucho) en la ciudad de Bogotá - Cundinamarca.</string>
+    <string name="historial2">Cuenta que allí en ese lugar oscuro y sin futuro, paso los peores años de su vida y desperdiciados,
+        mendigando comida, robando y consumiendo drogas, sin ningún propósito o salvación. Pero todas estas dificultades por las
+        que estaba pasando ¡no tenían y no debía ser así! Dice el: “Nada es para siempre, todo era temporal...”
+Pero su propósito y expectativas eran tan grandes que, en el momento de ver su vida arruinada y perdida, pasando por necesidades y
+        hambre, pensó en ese momento… en lo bueno que era el, utilizando sus manos para reparar y trabajar en lo que su padre le
+        había infundado y no para cometer acciones incoherentes o seguir llevando su vida a un fracaso. Recordó cuál era su camino
+        y por qué se había ido de la casa. Tomando una grandiosa determinación, Diego Alexander Castillo decide dejar las drogas y
+        todo lo toxico que lo está llevando a la “muerte “literalmente a su perdición.
+En su momento de superación Diego castillo logra salir de las drogas y comenzar una nueva vida, desempeñando nuevas etapas, pero en
+        esta parte de su vida y de rehabilitación inicia en el campo laboral, ejerciendo la electrónica como su máxima alternativa,
+        aplicando los conocimientos que desde muy niño había obtenido por parte su padre. La meta en la vida de él, no debió haber
+        tocado esos direccionamientos y malos hábitos, pero logra recordar su camino y emprende una vida digna con muchas expectativas
+        de salir adelante con su proyecto de vida.
+Comienza a buscar trabajo en la ciudad de Bogotá, trabajándole a diferentes personas, por unos cuantos pesos que en su instante solo
+        le alcanza para comer algunas veces, pasando por todas esas necesidades y dificultades en el ámbito laboral y personal, decide
+        poder emprender un pequeño local de tan solo un metro por un metro de espacio, donde ofreciera servicio de reparación en
+        equipos electrónicos domésticos como televisores y radios. Era tan pequeño el lugar que solo permitía arreglar un elemento de
+        soporte para luego entregarlo y poder recibir al siguiente cliente, pues el espacio no le permitía almacenar equipos y tenerlos
+        en espera. El arriendo para su local le correspondía pagar diarios que le constaba cuatro mil pesos en ese tiempo, pero en su
+        lucha diaria era muy difícil hacerse ese dinero, debido a las diferentes situaciones, como los días que no llegaba trabajo o
+        cuando llegaba trabajo y tenía que esperar un repuesto suspendiendo las demás labores.
+Pasado el tiempo conoció a una persona que como consecuencia ella fue su primera esposa y madre de su primera hija, iniciando una vida
+        de pareja, decide poner en pausa su desempeño en el local e inicia a trabajar en una clínica llamada la reina Sofía en
+        Bogotá – Cundinamarca, con el propósito de obtener más ganancias y poder sustentar su hogar. Ejerciendo un cargo como auxiliar
+        técnico sin tener ningún título profesional o certificación, trabajándole a otro técnico encargado del área de sistemas de la
+        clínica manifestada. Limpiando tornillos, desarmando unidades odontológicas, desarmando y armando unidades de rayos (x) y
+        cambiando buses de datos, se ganaba la vida desempeñando estos tipos de trabajos, adquiriendo día a día conocimientos en el área
+        de equipos médicos.</string>
+    <string name="historia3">Se profundiza en ese campo laboral y además de arreglar equipos médicos, termino vendiendo equipos médicos
+        como: ozonizadores para limpieza facial, electrodos, impulsadores y elementos que se utilizan en la medicina china. Comenzó a
+        reparar y fabricar estos equipos, logrando contactar un médico que de profesión era ingeniero industrial pero que se desempeñó
+        más por el estudio de la Elva china. Le solicitaba a Diego Castillo realizar diferentes equipos que el requiriera, prácticamente
+        estos equipos eran una especie de inventos médicos aplicados al electro medicina. De inmediato se pone a la tarea de investigar
+        por sus propios méritos, retroalimentándose en diferente tipo de información que en su momento no tenía conocimiento para
+        realizar los aparatos que le solicitaban. Logrando con el objetivo requerido, entregaba los equipos justo a tiempo y con las
+        especificaciones que le daban para ser recibido. Poco a poco iba obteniendo más conocimiento en diferentes tipos de servicios
+        y teniéndole más pasión a la electrónica.
+Pero no todo era perfecto, por circunstancias anexas y como todo momento de trabajo laboral, hay tiempos buenos como tiempos malos y
+        día a día se iba minimizando el trabajo por el alto nivel de competencia y precios bajos. Complicándose la situación laboral,
+        se dirige a la ciudad de guaduas – Cundinamarca, donde su padre tenía un taller de electrónica en reparación de equipos
+        domésticos como (planchas, licuadoras, ventiladores, radios de sonido, televisores crt y entre otros equipos electrónicos).
+Mientras que estuvo trabajando con su padre en aquel pequeño taller, logra hacer comunicación con un amigo muy cercano a la familia
+        de él, que vivía en la ciudad de Yopal – Casanare, de nombre Miguel Orlando Cáceres. Gracias a este personaje que llega a la
+        historia, el señor Diego Castillo logra llegar a la ciudad de Yopal, dejando a su esposa en la ciudad de Bogotá sin saber
+        que estaba en embarazado, aceptando el sacrificio que estaba realizando con la razón lógica de poder seguir persistiendo con
+        su sueño y buscando nuevas oportunidades de prosperidad.
+Volviendo a iniciar de cero, Diego Alexander Castillo regresa a los tiempos atrás y vuelve a pasar por necesidades en común,
+        trabajándole a otras personas prácticamente esclavizado, donde le pagaban el 10% del que trabajo que realizara diario
+        arreglando equipos electrónicos, pero desafortunadamente en este país vivir con un diez por ciento de ganancias solo alcanza
+        para comer algunas veces. Después de un largo tiempo laborando en aquel lugar, su jefe decide comenzar a darle un 20% y
+        luego poco a poco fue dándole más y más hasta llegar el punto de otorgarle el 50% de los trabajos  arreglados, luego al ver
+        su jefe que estaba ganando una buena cantidad de dinero, le aconseja que inicie una vida independiente  con su propio local
+        en donde pudiera trabajar en conjunto, llevándole los equipos al señor Diego Castillo facilitándole un precio rentable tanto
+        para el antiguo jefe como para él.
+Desde ese momento inicio su proyecto como empresa ofreciendo servicios de electrónica y es en ese instante donde nace la empresa
+        NEDCA que en su significado es (Nueva electrónica digital castillo). Ofreciendo diferentes tipos de servicios, con un buen
+        manejo de atención al cliente y generando buenas ganancias logra mantener la empresa un periodo corto, por razones económicas
+        y personales decide cerrar su taller y ejercer su rol como papá recibiendo a su primera hija.
+Pasado el tiempo Diego Castillo se divorcia con su esposa por motivos personales, e inicia una nueva etapa y es quizás el principio
+        esperado de volver a emprender su proyecto de vida y empresarial, tomando la decisión de abrir un negocio a nombre de él,
+        que satisficiera la necesidad y generara confianza a los ciudadanos de la ciudad de Yopal. Aplicando todos sus conocimientos
+        que en el trayecto de su vida fue aprendiendo, es ahí donde nace NED (Nueva Electrónica Digital) en el año 2008 como razón
+        social, ya con nuevos objetivos y metas alcanzar, presta diferentes servicios de electrónica y reparación de todo tipo de
+        equipos electrónicos. Después de un largo tiempo conoció a una mujer que actualmente es su esposa y madre de sus otros dos
+        hijos, viendo el nivel de responsabilidad decide poner la empresa NED. </string>
+    <string name="historia4">Nueva electrónica digital es una empresa que tardo en surgir su existencia, pero que está basada en toda
+        la vida, experiencias y necesidades que paso el señor Diego castillo para lograr ser lo que hoy en día se puede llamar una
+        empresa de calidad. Se basa en que tan solo su inicio fue con unos cuantos destornilladores, un multímetro de los más baratos
+        y un cautil eléctrico de 30 Watts con mango de madera que en la actualidad solo cuesta tres mil pesos.  Para hoy lograr tener
+        unos activos con más de veinte millones de pesos en materiales y herramientas dándoles un buen uso para seguir generando
+        ganancias a la empresa y un excelente servicio al cliente.
+Hoy en día a pesar de pasar diferentes etapas, dificultades y situaciones económicas, Diego castillo lograr cumplir unos de sus más
+        grandes objetivos, manteniendo la empresa NED en el mercado con todos su estándares y legalidades, con más de nueve años de
+        experiencia y activa en el mercado, ofreciendo de los mejores servicios con un alto nivel de calidad, responsabilidad y eficaz
+        en todo tipo de equipos electrónicos. Con nuevas perspectivas y logros a alcanzar Ned quiere poder ser unas de las mejores
+        empresas a nivel nacional en crear tecnología para el hogar y empresas que lo requiera, también seguir brindando servicios
+        en reparación de todo tipo equipos electrónicos mejorando día a día el servicio al cliente.</string>
 </resources>

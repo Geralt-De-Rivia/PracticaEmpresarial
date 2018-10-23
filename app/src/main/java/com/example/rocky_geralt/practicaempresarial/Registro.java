@@ -1,6 +1,9 @@
 package com.example.rocky_geralt.practicaempresarial;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -36,6 +39,11 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
         registrar = findViewById(R.id.btnRegistro);
 
         registrar.setOnClickListener(this);
+
+        if (!conexion(this)){
+            Toast.makeText(getBaseContext(), "Necesita conexion a internet ", Toast.LENGTH_LONG).show();
+            this.finish();
+        }
 
     }
 
@@ -100,8 +108,25 @@ public class Registro extends AppCompatActivity implements View.OnClickListener 
     public void onBackPressed(){
         Intent menu = new Intent(Registro.this, MainActivity.class);
         startActivity(menu);
+        this.finish();
+    }
 
-        Registro.this.finish();
+    public static boolean conexion(Context context){
+
+        boolean conectado = false;
+
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        //Recuperar todas las redes (datos o wifi)
+        NetworkInfo[] redes = connectivityManager.getAllNetworkInfo();
+
+        for (int i = 0; i < redes.length; i++){
+            //Si alguna red tiene conexion, se devuelve true
+            if (redes[i].getState() == NetworkInfo.State.CONNECTED){
+                conectado = true;
+            }
+        }
+        return conectado;
     }
 
 }

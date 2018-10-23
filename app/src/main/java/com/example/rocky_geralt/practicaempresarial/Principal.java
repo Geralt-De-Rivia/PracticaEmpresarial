@@ -29,7 +29,8 @@ public class Principal extends AppCompatActivity{
     public void onBackPressed(){
         Intent menu = new Intent(Principal.this, MainActivity.class);
         startActivity(menu);
-
-        Principal.this.finish();
+        this.finish();
     }
+
+
 }

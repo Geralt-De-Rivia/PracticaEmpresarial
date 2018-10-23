@@ -1,9 +1,14 @@
 package com.example.rocky_geralt.practicaempresarial;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
         sesion = findViewById(R.id.btnSesion);
         registrar = findViewById(R.id.txtRegistro);
 
+        if (!conexion(this)){
+            Toast.makeText(getBaseContext(), "Necesita conexion a internet ", Toast.LENGTH_LONG).show();
+            this.finish();
+        }
+
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
         sesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (id.getText().toString().isEmpty()){  //AQUI DIGO SI EL CAMPO RUT ESTÁ VACÍO
+
+                if (id.getText().toString().isEmpty()){  //AQUI DIGO SI EL CAMPO NIT ESTÁ VACÍO
 
                     Toast.makeText(MainActivity.this, "Debe ingresar Nit o cedula", Toast.LENGTH_SHORT).show(); //MANDE UN MENSAJE QUE DEBE INGRESAR RUT
 
@@ -69,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                                 String email = jsonResponse.getString("email");
                                 String telefono = jsonResponse.getString("telefono");
 
-                                Intent intent = new Intent(MainActivity.this, Principal.class);
+                                Intent intent = new Intent(MainActivity.this, Servicios.class);
                                 intent.putExtra("nombre", nombre);
                                 intent.putExtra("email", email);
                                 intent.putExtra("telefono", telefono);
@@ -96,4 +107,46 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.m_about:
+                showAbout();
+                return true;
+            case R.id.m_howto:
+                showHowTo();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void showAbout() {
+        Intent i = new Intent(this, Acerca.class);
+        startActivity(i);
+    }
+    private void showHowTo() {
+        Intent i = new Intent(this, Ayuda.class);
+        startActivity(i);
+    }
+
+    public static boolean conexion(Context context){
+
+        boolean conectado = false;
+        ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        //Recuperar todas las redes (datos o wifi)
+        NetworkInfo[] redes = connectivityManager.getAllNetworkInfo();
+        for (int i = 0; i < redes.length; i++){
+            //Si alguna red tiene conexion, se devuelve true
+            if (redes[i].getState() == NetworkInfo.State.CONNECTED){
+                conectado = true;
+            }
+        }
+        return conectado;
+    }
 }
