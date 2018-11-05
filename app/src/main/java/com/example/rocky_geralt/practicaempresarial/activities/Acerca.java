@@ -1,7 +1,9 @@
-package com.example.rocky_geralt.practicaempresarial;
+package com.example.rocky_geralt.practicaempresarial.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.example.rocky_geralt.practicaempresarial.R;
 
 public class Acerca extends Activity {
 

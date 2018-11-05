@@ -15,20 +15,20 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".app.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".Registro" android:label="Registro"/>
-        <activity android:name=".Principal" android:label="Principal"/>
-        <activity android:name=".Servicios" android:label="Servicios"/>
-        <activity android:name=".Acerca" android:label="Acerca de NED"/>
-        <activity android:name=".Ayuda" android:label="Ayuda"/>
-        <activity android:name=".Soporte" android:label="Soporte"/>
-        <activity android:name=".Noticias" android:label="Quienes somos"/>
+        <activity android:name=".activities.Registro" android:label="Registro"/>
+        <activity android:name=".activities.Principal" android:label="Principal"/>
+        <activity android:name=".activities.Servicios" android:label="Servicios"/>
+        <activity android:name=".activities.Acerca" android:label="Acerca de NED"/>
+        <activity android:name=".activities.Ayuda" android:label="Ayuda"/>
+        <activity android:name=".activities.Soporte" android:label="Soporte"/>
+        <activity android:name=".activities.Noticias" android:label="Quienes somos"/>
     </application>
 
 

@@ -4,8 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Soporte">
+    android:padding="10dp"
+    android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Llene los siguientes campos para validar su soporte:"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/txtTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de equipo electronico"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/Tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ej.. computador portatil"/>
+
+            <TextView
+                android:id="@+id/txtMarca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marca:"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/Marca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ej.. Samsung, Lenovo etc.."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmpresa"
+                android:text="Nombre de empresa o cliente"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/Empresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ej.. Wilmak.S.A.S"/>
+
+            <TextView
+                android:id="@+id/txtTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/telefono"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/Telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="ej.. 3208088701"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDireccion"
+                android:text="Direccion donde realizar el soporte:"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/Direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ej.. cll 28 # 33-10"/>
+
+            <TextView
+                android:id="@+id/txtDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion del daño:"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/Descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:hint="detalle que problema tiene el equipo"/>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="SOLICITAR SOPORTE"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:id="@+id/btnSoporte"
+                android:background="@drawable/boton_redondo"
+                android:backgroundTint="#105510"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

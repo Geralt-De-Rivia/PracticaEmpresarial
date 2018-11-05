@@ -1,4 +1,4 @@
-package com.example.rocky_geralt.practicaempresarial;
+package com.example.rocky_geralt.practicaempresarial.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,12 +15,12 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.example.rocky_geralt.practicaempresarial.app.MainActivity;
+import com.example.rocky_geralt.practicaempresarial.R;
+import com.example.rocky_geralt.practicaempresarial.connection.RegisterRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Registro extends AppCompatActivity implements View.OnClickListener {
     EditText etnombre, etpassword, etid, ettelefono, etemail;

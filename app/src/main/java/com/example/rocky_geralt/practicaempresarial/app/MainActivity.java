@@ -1,4 +1,4 @@
-package com.example.rocky_geralt.practicaempresarial;
+package com.example.rocky_geralt.practicaempresarial.app;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,6 +18,12 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.example.rocky_geralt.practicaempresarial.R;
+import com.example.rocky_geralt.practicaempresarial.activities.Acerca;
+import com.example.rocky_geralt.practicaempresarial.activities.Ayuda;
+import com.example.rocky_geralt.practicaempresarial.activities.Registro;
+import com.example.rocky_geralt.practicaempresarial.activities.Servicios;
+import com.example.rocky_geralt.practicaempresarial.connection.LoginRequest;
 
 import org.json.JSONException;
 import org.json.JSONObject;

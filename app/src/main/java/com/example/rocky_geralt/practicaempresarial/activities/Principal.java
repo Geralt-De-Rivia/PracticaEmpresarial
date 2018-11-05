@@ -1,9 +1,12 @@
-package com.example.rocky_geralt.practicaempresarial;
+package com.example.rocky_geralt.practicaempresarial.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import com.example.rocky_geralt.practicaempresarial.R;
+import com.example.rocky_geralt.practicaempresarial.app.MainActivity;
 
 public class Principal extends AppCompatActivity{
 
