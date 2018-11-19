@@ -12,13 +12,15 @@ public class SupportRequest extends StringRequest {
     private static final String SUPPORT_REQUEST_URL = "https://half-pound-roar.000webhostapp.com/proyectopractica/Soporte.php"; //Ruta donde se encuentra nuestra conexion php a base de datos de registro
     private Map<String, String> parametros;
 
-    public SupportRequest(String tipo, String marca, String empresa, String telefono, String descripcion, Response.Listener<String> listener) {
+    public SupportRequest(String id, String tipo, String marca, String empresa, String telefono, String direccion, String descripcion, Response.Listener<String> listener) {
         super(Request.Method.POST, SUPPORT_REQUEST_URL, listener, null);
         parametros = new HashMap<>();
+        parametros.put("id", id);
         parametros.put("tipo", tipo);
         parametros.put("marca", marca);
         parametros.put("empresa", empresa);
         parametros.put("telefono", telefono);
+        parametros.put("direccion", direccion);
         parametros.put("descripcion", descripcion);
     }
 

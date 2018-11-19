@@ -25,7 +25,7 @@ import org.json.JSONObject;
 
 public class Soporte extends AppCompatActivity implements View.OnClickListener {
 
-    EditText etTipo, etMarca, etEmpresa, etTelefono, etDescripcion;
+    EditText etId, etTipo, etMarca, etEmpresa, etTelefono, etDireccion, etDescripcion;
     Button registrar;
 
     @Override
@@ -33,10 +33,12 @@ public class Soporte extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.soporte);
 
+        etId = findViewById(R.id.Id);
         etTipo = findViewById(R.id.Tipo);
         etMarca = findViewById(R.id.Marca);
         etEmpresa = findViewById(R.id.Empresa);
         etTelefono = findViewById(R.id.Telefono);
+        etDireccion = findViewById(R.id.Direccion);
         etDescripcion = findViewById(R.id.Descripcion);
         registrar = findViewById(R.id.btnSoporte);
 
@@ -52,17 +54,24 @@ public class Soporte extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onClick(View view) {
 
+        final String id = etId.getText().toString();
         final String tipo = etTipo.getText().toString();
         final String marca = etMarca.getText().toString();
         final String empresa = etEmpresa.getText().toString();
         final String telefono = etTelefono.getText().toString();
+        final String direccion = etDireccion.getText().toString();
         final String descripcion = etDescripcion.getText().toString();
 
         Response.Listener<String> respoListener = new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
 
-                if (etTipo.getText().toString().isEmpty()){  //SE APLICA UNA CONDICIÓN SI LOS CAMPOS ESTÁN VACÍOS
+                if (etId.getText().toString().isEmpty()){  //SE APLICA UNA CONDICIÓN SI LOS CAMPOS ESTÁN VACÍOS
+
+                    Toast.makeText(Soporte.this, "Debe ingresar id de la empresa o cliente", Toast.LENGTH_SHORT).show();
+                    //SE MANDA MENSAJE
+
+                }else if (etTipo.getText().toString().isEmpty()){  //SE APLICA UNA CONDICIÓN SI LOS CAMPOS ESTÁN VACÍOS
 
                     Toast.makeText(Soporte.this, "Debe ingresar tipo de equipo electronico", Toast.LENGTH_SHORT).show();
                     //SE MANDA MENSAJE
@@ -79,17 +88,21 @@ public class Soporte extends AppCompatActivity implements View.OnClickListener {
 
                     Toast.makeText(Soporte.this, "Debe ingresar numero de telefono", Toast.LENGTH_SHORT).show();
 
+                }else if (etDireccion.getText().toString().isEmpty()) {
+
+                    Toast.makeText(Soporte.this, "Debe ingresar direccion del soporte", Toast.LENGTH_SHORT).show();
+
                 }else if (etDescripcion.getText().toString().isEmpty()) {
 
                     Toast.makeText(Soporte.this, "Debe ingresar descripcion del problema", Toast.LENGTH_SHORT).show();
 
                 }
                 try {
-                    JSONObject jsonReponse = new JSONObject(response);
-                    boolean success = jsonReponse.getBoolean("success");
+                    JSONObject jsonResponse = new JSONObject(response);
+                    boolean success = jsonResponse.getBoolean("success");
                     if (success){
-                        Toast.makeText(Soporte.this, "registro de soporte creado exitosamente", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(Soporte.this, MainActivity.class);
+                        Toast.makeText(Soporte.this, "registro de soporte creado exitosamente", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(Soporte.this, Servicios.class);
                         startActivity(intent);
                         Soporte.this.finish();
                     }else {
@@ -102,7 +115,7 @@ public class Soporte extends AppCompatActivity implements View.OnClickListener {
             }
         };
 
-        SupportRequest supportRequest = new SupportRequest(tipo, marca, empresa, telefono, descripcion, respoListener );
+        SupportRequest supportRequest = new SupportRequest(id, tipo, marca, empresa, telefono, direccion, descripcion, respoListener );
         RequestQueue queue = Volley.newRequestQueue(Soporte.this);
         queue.add(supportRequest);
     }

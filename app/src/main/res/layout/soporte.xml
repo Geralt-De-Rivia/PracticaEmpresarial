@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/fondo">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,6 +24,20 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="20dp"
                 android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/txtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id empresa/cliente"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ej.. 1118557622" />
+
             <TextView
                 android:id="@+id/txtTipo"
                 android:layout_width="wrap_content"
@@ -102,6 +117,7 @@
                 android:inputType="textMultiLine"
                 android:hint="detalle que problema tiene el equipo"/>
 
+
             <Button
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
@@ -112,6 +128,7 @@
                 android:background="@drawable/boton_redondo"
                 android:backgroundTint="#105510"
                 android:textColor="#fff"/>
+
         </LinearLayout>
     </ScrollView>
 
